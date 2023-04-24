@@ -1,0 +1,29 @@
+.members {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px;
+  margin: auto;
+  width: 90%;
+  grid-auto-rows: 1fr;
+}
+
+.member {
+  width: 80%;
+  margin: auto;
+  border: 1px solid var(--main-color);
+  padding: 30px;
+  text-transform: capitalize;
+  border-radius: 4px;
+}
+
+@media (max-width: 1000px) {
+  .members {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 660px) {
+  .members {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
